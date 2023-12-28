@@ -1,11 +1,11 @@
-# ⚖️ATTA: Anomaly-aware Test-Time Adaptation for Out-of-Distribution Detection in Segmentation
+# ⚖️ATTA
 Welcome to the official code repository for [*ATTA: Anomaly-aware Test-Time Adaptation for Out-of-Distribution Detection in Segmentation*](https://openreview.net/pdf?id=bGcdjXrU2w) by Zhitong Gao, Shipeng Yan, and Xuming He (NeurIPS 2023). 
 This work introduces a novel framework to enhance the robustness of dense out-of-distribution (OOD) detection models against domain shifts through test-time adaptation techniques.
 ![avatar](docs/model_overview.jpg)
-*Overview of the proposed Anomaly-aware Test-Time Adaptation (ATTA) framework.*
+*Figure 1: Overview of the proposed Anomaly-aware Test-Time Adaptation (ATTA) framework.*
 
 ![avatar](docs/roadanomaly_vis.png)
-*Visualization of ATTA adaptation results on the RoadAnomaly dataset.*
+*Figure 2: Visualization of ATTA adaptation results on the RoadAnomaly dataset.*
 
 Other Resources: [[Poster](https://gaozhitong.github.io/posters/poster-atta.pdf) | [Slides](https://gaozhitong.github.io/slides/slides-atta.pdf)]
 
@@ -55,7 +55,7 @@ For example, to apply a fog transformation, use the following command:
 python main.py --cfg 'exp/atta.yaml' --dataset FS_Static_C --method PEBAL --trans_type fog
 ```
 
-#📄 Citation
+# 📄 Citation
 If you find our work helpful for your research, please consider citing our paper:
 ```bibtex
 @inproceedings{
@@ -73,5 +73,5 @@ We express our gratitude to the authors of the following codebases which have be
 
 # ✉️ Contact
 If you have any issues or questions related to the code, please feel free to open an issue on GitHub. 
-For general discussions, suggestions, or further assistance, you can reach out to me (Zhitong Gao) via email at [gaozht@shanghaitech.edu.cn](mailto:gaozht@shanghaitech.edu.cn).
+For general discussions, suggestions, or further assistance, you can reach out to me (Zhitong Gao) via [email](mailto:gaozht@shanghaitech.edu.cn).
 
