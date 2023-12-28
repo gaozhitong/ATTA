@@ -1,0 +1,7 @@
+model:
+  backbone: 'WideResNet38' # ['WideResNet38', 'ResNet101']
+
+train:
+  tta: 'TBN'
+  test_batch: 1
+  instance_BN: True

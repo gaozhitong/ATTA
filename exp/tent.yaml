@@ -1,0 +1,18 @@
+model:
+  backbone: 'WideResNet38' # ['WideResNet38', 'ResNet101']
+  trainable_params_name: 'bn'
+
+train:
+  tta: 'tent'
+  test_batch: 1
+
+  optimizer: Adam
+  lr: 1.0e-4
+  weight_decay: 0
+
+  episodic: True
+  instance_BN: True
+
+loss:
+  name: 'EntropyLoss'
+  params:  {'temperature': 1}

@@ -1,0 +1,23 @@
+model:
+  backbone: 'WideResNet38' # ['WideResNet38', 'ResNet101']
+  trainable_params_name: 'final'
+
+train:
+  tta: 'atta'
+  test_batch: 1
+
+  optimizer: Adam
+  lr: 1.0e-4
+  weight_decay: 0
+
+  episodic: True
+  domain_detector: True
+
+loss:
+  name: 'ASTLoss'
+  params: {
+    'tau1':0.3,
+    'tau2':0.6,
+    'sample_ratio':0.01,
+    'combine': True
+  }

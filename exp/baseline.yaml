@@ -1,0 +1,5 @@
+model:
+  backbone: 'WideResNet38' # ['WideResNet38', 'ResNet101']
+
+train:
+  test_batch: 1
